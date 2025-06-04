@@ -1,6 +1,8 @@
 package com.example.finance_tracker;
 
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
@@ -8,8 +10,8 @@ import java.util.List;
 @RequestMapping("/api/transactions")
 @RequiredArgsConstructor
 @CrossOrigin(origins = "http://localhost:3000")
-
 public class TransactionController {
+
     private final TransactionService service;
 
     @GetMapping
@@ -18,7 +20,8 @@ public class TransactionController {
     }
 
     @PostMapping
-    public Transaction add(@RequestBody Transaction t) {
-        return service.add(t);
+    public ResponseEntity<Transaction> add(@RequestBody Transaction t) {
+        Transaction saved = service.add(t);
+        return new ResponseEntity<>(saved, HttpStatus.CREATED);
     }
 }

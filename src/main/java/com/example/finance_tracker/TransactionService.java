@@ -1,21 +1,21 @@
 package com.example.finance_tracker;
 
-import com.example.finance_tracker.Transaction;
-import com.example.finance_tracker.TransactionRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+
 import java.util.List;
 
 @Service
 @RequiredArgsConstructor
 public class TransactionService {
-    private final TransactionRepository repo;
+
+    private final TransactionRepository transactionRepository;
 
     public List<Transaction> getAll() {
-        return repo.findAll();
+        return transactionRepository.findAll();
     }
 
     public Transaction add(Transaction t) {
-        return repo.save(t);
+        return transactionRepository.save(t);
     }
 }
