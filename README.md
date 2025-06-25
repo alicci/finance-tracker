@@ -4,7 +4,7 @@ This is the **backend** of the Finance Tracker application, built with **Java**,
 It exposes a REST API that supports managing user financial transactions and retrieving data for visualization.
 
 For the frontend (React), see:  
-[Finance Tracker Frontend](https://github.com/alicci/finance-tracker-frontend)
+[Finance Tracker Frontend](https://github.com/alicci/finance-frontend)
 
 ---
 
