@@ -10,13 +10,11 @@ For the frontend (React), see:
 
 ## Technologies Used
 
-- Java 17+
-- Spring Boot (REST, Web, JPA, Validation)
+- Java 24
+- Spring Boot (REST, Web, JPA)
 - PostgreSQL
 - Spring Data JPA
 - Lombok
-- Maven
-- Docker (optional)
 
 ---
 
@@ -30,7 +28,7 @@ For the frontend (React), see:
 
 ---
 
-## ▶Getting Started
+## Getting Started
 
 ### 1. Clone the repository
 
