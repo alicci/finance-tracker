@@ -1,9 +1,39 @@
-# Finance Tracker
+# Finance Tracker – Backend
 
-Finance Tracker is a web application for managing personal financial transactions.  
-It features a Java Spring Boot backend connected to a PostgreSQL database and a React frontend built with Node.js.
+This is the **backend** of the Finance Tracker application, built with **Java**, **Spring Boot**, and **PostgreSQL**.  
+It exposes a REST API that supports managing user financial transactions and retrieving data for visualization.
 
-## Getting Started
-1. Run the backend server (`Spring Boot` application).
-2. Start the React frontend (`npm start`).
-3. Access the app via `http://localhost:3000`.
+For the frontend (React), see:  
+[Finance Tracker Frontend](https://github.com/alicci/finance-tracker-frontend)
+
+---
+
+## Technologies Used
+
+- Java 17+
+- Spring Boot (REST, Web, JPA, Validation)
+- PostgreSQL
+- Spring Data JPA
+- Lombok
+- Maven
+- Docker (optional)
+
+---
+
+## Main Features
+
+- Add new financial transactions via API
+- Retrieve transaction lists
+- Filter transactions by date
+- Delete transactions
+- Support for connecting with a React frontend
+
+---
+
+## ▶Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/alicci/finance-tracker.git
+cd finance-tracker
